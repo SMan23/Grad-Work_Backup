@@ -1,0 +1,13 @@
+Assignment 10 Problem #1:
+
+Dynamically set up lists
+ - each linked
+ - pointer to each head (row NUM) 
+
+Use calloc to allocate mem of size X
+ 
+***
+initial input is the # of rows and columns
+ 
+input will be in format "row column value"
+

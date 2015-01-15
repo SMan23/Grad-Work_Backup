@@ -1,0 +1,39 @@
+ECE 8473 Assignment #1 - Due: 11 Sept. 2010
+
+   1. a1/p1.c - limits
+
+      Write a C program which determines, at run-time:
+
+          * whether char is signed or unsigned
+
+          * the largest positive power of 2 which can be represented in char, short, int, and long data types
+
+          * the largest (positive) and smallest (negative) power of 2 which can be represented in float and double data types 
+
+      Do not include any headers files (e.g. limits.h, float.h) except stdio.h.
+
+      Extra: also determine, at run-time, whether the machine architecture is big or little endian.
+   2. a1/p2.c - c2html
+
+      Write a C program which reads standard input byte-by-byte using getchar(), writes to standard output, and converts the input to preformatted HTML. This program can be useful for preparing C code (or any non-HTML data) to embed in web pages.
+
+      Preformatted HTML means that the output starts with "<pre>\n" and ends with "</pre>\n" tags, and input characters '&', '<', and '>' are converted to the character entity strings "&amp;", "&lt;", and "&gt;" on output.
+
+      See the ABC examples: ch01/10_nice_day.c, page 39 (which has a potential buffer-overflow bug, as well as an obvious mistake - the variable used for the return value of getchar() must be int, not char), ch01/13_double_out.c, page 57, and ch03/02_double_out.c, page 124.
+   3. a1/p3.c - crash
+
+      Write a small C program which compiles with no warnings or errors and crashes at run-time. The program must be self-contained and independent of any input or environmental factors.
+   4. a1/p4.sh - ls & chmod
+
+      Write a shell script which first creates a file with initial permissions:
+
+      ----------
+
+      and then uses a sequence of ``chmod'' and ``ls -l'' commands to set and display the file permissions in turn to each of the following:
+
+      -rw-r--r--
+      -r--r--r--
+      -rwxrw-r--
+      ---x--x--x
+
+

@@ -1,0 +1,34 @@
+2.b
+
+;;; Iterative Revision: mods3
+
+(defun mods3 (lst n)
+  (let ((lst2 nil))
+    (do ((i lst (cdr i)))
+        ((eql i nil) (reverse lst2))
+      (if (zerop (mod (car i) n))
+          (setf lst2 (cons 0 lst2)
+                n (+ n 1))
+          (setf lst2 (cons n lst2))))))
+
+;@; COMMAND LINE INPUT/OUTPUT
+
+;CG-USER(22): (mods3 nil 2)
+;NIL
+;CG-USER(23): (mods3 '(3 4 5) 3)
+;(0 0 0)
+;CG-USER(24): (mods3 '(2 3 5 4) 3)
+;(3 0 4 0)
+;CG-USER(25): (mods3 '(15 3 10 20 4) 5)
+;(0 6 6 6 6)
+;CG-USER(26): (mods3 '(10 18 28 24) 5)
+;(0 0 0 0)
+;CG-USER(27): (mods3 '(4 3 10 23 32 6) 8)
+;(8 8 8 8 0 9)
+;CG-USER(28): (mods3 '(4 7 6 21 8 12 50) 2)
+;(0 3 0 4 0 5 0)
+;CG-USER(29): (mods3 '(3 5 82 12 49) 7)
+;(7 7 7 7 0)
+;CG-USER(30): (mods3 '(2 3 4 5 6 7) 8)
+;(8 8 8 8 8 8)
+

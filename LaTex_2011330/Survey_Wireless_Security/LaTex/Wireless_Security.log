@@ -1,0 +1,218 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=latex 2010.10.20)  16 NOV 2010 15:47
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Wireless_Security.tex
+(./Wireless_Security.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, basque, catalan, czech, dutch, ukengli
+sh, usenglishmax, french, galician, german, ngerman, swissgerman, italian, poli
+sh, portuguese, slovak, spanish, loaded.
+(./IEEEtran.cls
+Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+-- Using IEEE Computer Society mode.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 377.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+** ATTENTION: Single column mode is not typically used with IEEE publications.
+-- Using 7.875in x 10.75in (letter) paper.
+-- Using DVI output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is an 11 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 735.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <6> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 735.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 735.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 735.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 735.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 735.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 735.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 735.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 735.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 735.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 735.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 735.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 735.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 735.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 735.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 735.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 735.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 735.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count90
+\@IEEEtranrubishbin=\box26
+) (/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+)
+(./Wireless_Security.aux)
+\openout1 = `Wireless_Security.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 68.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+** WARNING: \and is valid only when in conference or peerreviewca
+modes (line 68).
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 68.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 68.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 68.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 68.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 68.
+LaTeX Font Info:    Try loading font information for U+pzd on input line 68.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 71.
+LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <12> not available
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 71.
+ [1]
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 94.
+File: /home/suleyman/Desktop/Survey_Wireless_Security/Latex/pics/BMpassprt.eps 
+Graphic file (type eps)
+
+</home/suleyman/Desktop/Survey_Wireless_Security/Latex/pics/BMpassprt.eps>
+[2]
+File: /home/suleyman/Desktop/Survey_Wireless_Security/Latex/pics/ZOR_w.eps Grap
+hic file (type eps)
+ </home/suleyman/Desktop/Survey_Wireless_Security/Latex/pics/ZOR_w.eps>
+File: /home/suleyman/Desktop/Survey_Wireless_Security/Latex/pics/ZOR_wout.eps G
+raphic file (type eps)
+
+</home/suleyman/Desktop/Survey_Wireless_Security/Latex/pics/ZOR_wout.eps>
+[3]
+File: /home/suleyman/Desktop/Survey_Wireless_Security/Latex/pics/Risk_Estimatio
+n.eps Graphic file (type eps)
+
+</home/suleyman/Desktop/Survey_Wireless_Security/Latex/pics/Risk_Estimation.eps
+>
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 178.
+ [4]
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ô in font pplr7t!
+ [5]
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ú in font pplr7t!
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ù in font pplr7t!
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ú in font pplr7t!
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ù in font pplr7t!
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ú in font pplr7t!
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ù in font pplr7t!
+File: /home/suleyman/Desktop/Survey_Wireless_Security/Latex/pics/TRNGchip.eps G
+raphic file (type eps)
+
+</home/suleyman/Desktop/Survey_Wireless_Security/Latex/pics/TRNGchip.eps>
+[6] [7] [8] (./Wireless_Security.aux) ) 
+Here is how much of TeX's memory you used:
+ 1307 strings out of 494771
+ 21453 string characters out of 3171601
+ 71491 words of memory out of 3000000
+ 4567 multiletter control sequences out of 15000+200000
+ 28170 words of font info for 71 fonts, out of 3000000 for 9000
+ 134 hyphenation exceptions out of 8191
+ 26i,5n,20p,323b,360s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on Wireless_Security.dvi (8 pages, 29940 bytes).

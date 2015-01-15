@@ -1,0 +1,49 @@
+ECE 8473 Assignment #2 - Due: 25 Sept. 2010
+Note: do not use any arrays in this assignment.
+
+   1. a2/p1.c - noisy sine wave
+
+      Use rand() to generate a random frequency f in the range 1 to 2 KHz and a random phase φ in the range 0 to 2π, then generate 101 values of a noisy sine wave, sin(2πft+φ)+r, sampled at 8 KHz, where r is uniformly distributed in the range -0.75 to 0.75.
+
+      The output must be suitable for plotting, i.e. a list of numerical values with no extraneous output.
+
+      Initialize rand() using srand(time(0)).
+   2. a2/p2.c - 3-point moving average
+
+      Write a C program to read double precision floating point values from standard input and use a sliding window to compute and write a 3-point moving average to standard output.
+
+      A sliding window consisting of the values y0,y1,y2 would initialize y1 and y2 to zero, then each time a new input value z is read, slide the window: y0=y1; y1=y2; y2=z;. The 3-point average is simply (y0+y1+y2)/3.
+
+      The output must be suitable for plotting.
+
+      You can test your program using input from the output of the previous program.
+   3. a2/p3.c - cracking rand()
+
+      A foolish system uses rand() to encrypt secret messages (rand() is not suitable for any computer security applications). The system initializes rand() using the time of day from time(0), and somehow leaks the results of the first three calls to rand(). Given those three values and the approximate value of time used, you can break the encryption.
+
+      The input consists of three successive values from rand(), one per line, followed by a secret message encrypted byte-by-byte by exclusive-or'ing with succeeding values of rand() (i.e. putchar(c^rand()); for each input byte c); Since you know that rand() was initialized within the past few minutes of each run, you can discover the initialization value by starting with time(0) and initializing an instance of rand() yourself, decrementing the time value until you are able to match the given three initial values of rand(). After that, you can continue to call rand() to decrypt the rest of the input.
+
+      You can test your program in VECR using the test link above the Run button.
+   4. a2/p4.c - random stats
+
+      Write a C program to read up to 1001 bytes from standard input (less if the input contains less than 1001 bytes) and compute and display the average, standard deviation, and serial correlation coefficient of the input bytes.
+
+      For n data samples Y0,...,Yn-1 the serial correlation coefficient is:
+
+            n(Y0Y1 + Y1Y2 + ... + Yn-2Yn-1 + Yn-1Y0) - S12
+        C = ----------------------------------------------
+                         n S2 - S12
+
+      where S1 and S2 are:
+
+        S1 = Y0 + Y1 + ... + Yn-1
+
+        S2 = Y02 + Y12 + ... + Yn-12
+
+      The average is a=S1/n and the standard deviation is the square root of (S2/n - a2).
+
+      Be careful with the special cases n=0, n=1, and all constant or zero data. In other words, avoid dividing by zero.
+
+      You can test your program by redirecting input from /dev/random or by using the output of any of the previous programs, or the input from p3. 
+
+

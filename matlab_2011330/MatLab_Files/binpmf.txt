@@ -1,0 +1,9 @@
+% M-file with function for computing the
+% binomial(n,p) pmf.
+%
+function y = binpmf(k,n,p)
+nk = n-k;
+p1 = 1-p;
+w = gammaln(n+1) - gammaln(nk+1) - gammaln(k+1) + ...
+   log(p)*k + log(p1)*nk;
+y = exp(w);

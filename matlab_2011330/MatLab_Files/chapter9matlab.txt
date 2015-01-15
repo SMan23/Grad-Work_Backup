@@ -1,0 +1,11 @@
+%% ================== Matlab code fragment 9.1 ==================
+k = [ 1 3 5 ];
+C(k,k)
+%% ================== Matlab code fragment 9.2 ==================
+x=linspace(-3.5,3.5,200);
+s = 1;    y1 = exp(-x.*x/(2*s))/sqrt(2*pi*s);
+s = 1/4;  y2 = exp(-x.*x/(2*s))/sqrt(2*pi*s);
+s = 1/9;  y3 = exp(-x.*x/(2*s))/sqrt(2*pi*s);
+s = 1/16; y4 = exp(-x.*x/(2*s))/sqrt(2*pi*s);
+plot(x,y1,x,y2,x,y3,x,y4)
+

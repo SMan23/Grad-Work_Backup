@@ -1,0 +1,34 @@
+%% ================== Matlab code fragment 12.1 ==================
+% Stationary Distribution Solver
+%
+% Enter transition matrix here:
+%
+P = [ 1/2 1/2 0 ; 1/4 0 3/4 ; 1/2 1/2 0 ];
+%
+n = length(P);          % number of states
+onecol = ones(n,1);     % col vec of ones
+In = diag(onecol);      % n x n identity matrix
+y = zeros(1,n);         % Create
+y(n) = 1;               % [ 0 0 0 .... 0 1 ]
+A = P - In;
+A(:,n) = onecol;
+pi = y/A;               % Solve pi * A = y
+fprintf('pi = [ ');     % Print answer in
+fprintf(' %g ',pi);     % decimal format
+fprintf(' ]\n\n')
+[num,den] = rat(pi);    % Print answer using
+fprintf('pi = [ ')      % rational numbers
+fprintf(' %g/%g ',[num ; den])
+fprintf(' ]\n\n')
+%% ================== Matlab code fragment 12.2 ==================
+% Now compare with P^m
+%
+m = input('Enter a value of m (0 to quit): ');
+while m > 0
+   Pm = P^m
+   fprintf('pi = [ ');  % Print pi in decimal
+   fprintf(' %g ',pi);  % to compare with P^m
+   fprintf(' ]\n\n')
+   m = input('Enter a value of m (0 to quit): ');
+end
+

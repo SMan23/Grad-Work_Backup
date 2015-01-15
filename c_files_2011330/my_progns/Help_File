@@ -1,0 +1,20 @@
+EXAMPLES
+
+    Printing to Standard Output
+
+    The following example gets the current time, converts it to a string using localtime() and asctime(), and prints it to standard output using fputs(). It then prints the number of minutes to an event for which it is waiting.
+
+    #include <time.h>
+    #include <stdio.h>
+    ...
+    time_t now;
+    int minutes_to_event;
+    ...
+    time(&now);
+    printf("The time is ");
+    fputs(asctime(localtime(&now)), stdout);
+    printf("There are still %d minutes to the event.\n",
+        minutes_to_event);
+    ...
+
+

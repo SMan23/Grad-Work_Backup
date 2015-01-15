@@ -1,0 +1,19 @@
+ECE 8473 Assignment #6 - Due: 6 Nov. 2010
+
+   1. [40] a6/p1.c (SSL) - N-point Moving Average
+
+      Write a program which reads double precision floating-point data from standard input and writes an N-point moving average of the data to standard output.
+
+      Test your program using input p1.in which is noisy sine data from assignment #2. Define N as 3 or 5 for testing, then try using a larger value of N, like 11.
+
+      Use an array of size N to store the N-point window of input data, and write functions to initialize the array, slide the window for inserting the next value, and compute the N-point average.
+   2. [30] a6/p2.c (SSL) - N-point Filter
+
+      Write a program which reads double precision floating-point data from standard input and writes an N-point filter of the data to standard output. Include "b.h" to obtain the value of N and the filter coefficients b[0]...b[N-1] which represent a 2 KHz notch filter.
+
+      Test your program using input bond.audio which is an audio clip corrupted by a 2 KHz interference tone.
+
+      Use an array of size N to store the N-point window of input data, and write functions to initialize the array, slide the window for inserting the next value, and compute the filter output.
+   3. [30] a6/p3.c (SSL) - N-point Filter with Circular Buffer
+
+      Start with a copy of p2.c and modify it to use a circular buffer for the input data. In this case, no function is needed to slide the window of input data. 

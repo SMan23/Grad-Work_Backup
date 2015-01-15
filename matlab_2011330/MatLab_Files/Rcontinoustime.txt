@@ -1,0 +1,5 @@
+function y = R(tau)
+y = ones(size(tau));
+i = find(tau~=0);
+x = pi*tau(i)/2;
+y(i) = sin(x)./x;

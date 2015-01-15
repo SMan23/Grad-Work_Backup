@@ -1,0 +1,39 @@
+%% ================== Matlab code fragment 5.1 ==================
+X = rand(1,k);
+Y = tan(pi*(X-1/2));
+%% ================== Matlab code fragment 5.2 ==================
+p = 0.3
+n = 5
+X = rand(1,n)
+Y = zeros(1,n)
+i = find(X>1-p)
+Y(i) = ones(size(i))
+%% ================== Matlab code fragment 5.3 ==================
+% % M-file with function to generate an
+% % m-by-n matrix of Bernoulli(p) random numbers.
+% %
+% function Y = bernrnd(p,m,n)
+% X = rand(m,n);
+% Y = zeros(m,n);
+% i = find(X>1-p);
+% Y(i) = ones(size(i));
+%% ================== Matlab code fragment 5.4 ==================
+bernmat = bernrnd(.5,10,4)
+X = sum(bernmat')
+%% ================== Matlab code fragment 5.5 ==================
+% % M-file with function for computing the
+% % binomial(n,p) pmf.
+% %
+% function y = binpmf(k,n,p)
+% nk = n-k;
+% p1 = 1-p;
+% w = gammaln(n+1) - gammaln(nk+1) - gammaln(k+1) + ...
+%    log(p)*k + log(p1)*nk;
+% y = exp(w);
+%% ================== Matlab code fragment 5.6 ==================
+n = 4
+p = 0.75
+k = [0:n]
+prob = binpmf(k,n,p)
+stem(k,prob,'filled')
+

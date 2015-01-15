@@ -1,0 +1,266 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=latex 2010.10.20)  5 JAN 2011 21:35
+entering extended mode
+ restricted \write18 enabled.
+ Source specials enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Final_Report_v4.5
+(./Final_Report_v4.5.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, basque, catalan, czech, dutch, ukengli
+sh, usenglishmax, french, galician, german, ngerman, swissgerman, italian, poli
+sh, portuguese, slovak, spanish, loaded.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
+Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+-- Using IEEE Computer Society mode.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 366.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+** ATTENTION: Single column mode is not typically used with IEEE publications.
+-- Using 8.5in x 11in (letter) paper.
+-- Using DVI output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is an 11 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <6> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 724.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count90
+\@IEEEtranrubishbin=\box26
+) (/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 130.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+
+LaTeX Warning: Unused global option(s):
+    [cspaper].
+
+(./Final_Report_v4.5.aux)
+\openout1 = `Final_Report_v4.5.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 50.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+** WARNING: \and is valid only when in conference or peerreviewca
+modes (line 50).
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 50.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 50.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 50.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 50.
+LaTeX Font Info:    Try loading font information for U+pzd on input line 50.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 53.
+LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <12> not available
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 53.
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ô in font pplr7t!
+ [1]
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 63.
+File: /home/suleyman/LaTex/pics/DSR_State.eps Graphic file (type eps)
+
+</home/suleyman/LaTex/pics/DSR_State.eps> [2]
+File: /home/suleyman/LaTex/pics/DSR_path.eps Graphic file (type eps)
+
+</home/suleyman/LaTex/pics/DSR_path.eps> [3]
+File: /home/suleyman/LaTex/pics/Packet.eps Graphic file (type eps)
+
+</home/suleyman/LaTex/pics/Packet.eps>
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ú in font pplr7t!
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ù in font pplr7t!
+File: /home/suleyman/LaTex/pics/Hop_Seq.eps Graphic file (type eps)
+ </home/suleyman/LaTex/pics/Hop_Seq.eps>
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ô in font pplr7t!
+File: /home/suleyman/LaTex/pics/Route.eps Graphic file (type eps)
+
+</home/suleyman/LaTex/pics/Route.eps> [4]
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 134.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <11> on input line 134.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7.69997> on input line 134.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5.5> on input line 134.
+File: /home/suleyman/LaTex/pics/RRQ_RRP_A.eps Graphic file (type eps)
+
+</home/suleyman/LaTex/pics/RRQ_RRP_A.eps>
+File: /home/suleyman/LaTex/pics/RRQ_RRP_B.eps Graphic file (type eps)
+
+</home/suleyman/LaTex/pics/RRQ_RRP_B.eps>
+File: /home/suleyman/LaTex/pics/RRQ_RRP_C.eps Graphic file (type eps)
+
+</home/suleyman/LaTex/pics/RRQ_RRP_C.eps>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ô in font pplr7t!
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ô in font pplr7t!
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ú in font pplr7t!
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ù in font pplr7t!
+[5]
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ô in font pplr7t!
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ú in font pplr7t!
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ù in font pplr7t!
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ú in font pplr7t!
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ù in font pplr7t!
+Missing character: There is no ‚ in font pplr7t!
+Missing character: There is no Ä in font pplr7t!
+Missing character: There is no ô in font pplr7t!
+ [6] (./Final_Report_v4.5.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1507 strings out of 494771
+ 24765 string characters out of 3171601
+ 70880 words of memory out of 3000000
+ 4754 multiletter control sequences out of 15000+200000
+ 27748 words of font info for 72 fonts, out of 3000000 for 9000
+ 134 hyphenation exceptions out of 8191
+ 26i,6n,21p,1176b,362s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on Final_Report_v4.5.dvi (6 pages, 15092 bytes).

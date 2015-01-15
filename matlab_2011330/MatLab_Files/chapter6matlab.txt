@@ -1,0 +1,236 @@
+%% ================== Matlab code fragment 6.1 ==================
+X = [ 5 2 7 3 8 ]
+Mn = mean(X)
+Sn = std(X)
+Sn2 = var(X)
+%% ================== Matlab code fragment 6.2 ==================
+e = [min(X):max(X)+1]-0.5;
+H = histc(X,e);
+%% ================== Matlab code fragment 6.3 ==================
+n = length(X);
+nbins = length(e) - 1;
+bin_centers = [min(X):max(X)];
+bar(bin_centers,H(1:nbins)/n,'hist')
+%% ================== Matlab code fragment 6.4 ==================
+hold on                  % prevent erasure of last plot
+k = [0:10];              % range for plotting pmf
+prob = binpmf(k,10,0.3); % compute binomial(10,0.3) pmf
+stem(k,prob,'filled')    % make stem plot of pmf
+%% ================== Matlab code fragment 6.5 ==================
+Mn = mean(X);
+pn = Mn/10;
+%% ================== Matlab code fragment 6.6 ==================
+n = 1000;                    % sample size
+Bernmat = bernrnd(0.3,n,10); % generate n binomial
+X = sum(Bernmat');           % random numbers in X
+minX = min(X);               % save to avoid re-
+maxX = max(X);               % computing min & max
+e = [minX:maxX+1]-0.5;
+H = histc(X,e);
+nbins = length(e) - 1;
+bin_centers = [minX:maxX];
+bar(bin_centers,H(1:nbins)/n,'hist')
+hold on
+k = [0:10];                  % range of pmf
+Mn = mean(X);
+pn = Mn/10;                  % estimate p
+prob = binpmf(k,10,pn);      % pmf w/ estimated p
+stem(k,prob,'filled')
+fprintf('Mn = %g  pn = %g\n',Mn,pn)
+hold off
+%% ================== Matlab code fragment 6.7 ==================
+minX = min(X);
+maxX = max(X);
+e = linspace(minX,maxX,nbins+1);
+H = histc(X,e);
+H(nbins) = H(nbins)+H(nbins+1);  % explained below
+H = H(1:nbins);                  % resize H
+bw = (maxX-minX)/nbins;          % bin width
+a = e(1:nbins);                  % left  edge sequence
+b = e(2:nbins+1);                % right edge sequence
+bin_centers = (a+b)/2;           % bin centers
+%% ================== Matlab code fragment 6.8 ==================
+n = length(X);
+bar(bin_centers,H/(bw*n),'hist')
+%% ================== Matlab code fragment 6.9 ==================
+hold on
+Mn = mean(X);
+lambdan = 1/Mn;
+t = linspace(minX,maxX,150); % range to plot pdf
+plot(t,lambdan*exp(-lambdan*t))
+fprintf('Mn = %g  lambdan = %g\n',Mn,lambdan)
+hold off
+%% ================== Matlab code fragment 6.10 ==================
+p = binpmf(bin_centers,10,0.2989);
+Z = sum((H(1:nbins)-n*p).^2./(n*p))
+%% ================== Matlab code fragment 6.11 ==================
+% function y = F(x)
+% y = 1 - exp(-4.86*x);
+%% ================== Matlab code fragment 6.12 ==================
+p = F(b) - F(a);
+Z = sum((H-n*p).^2./(n*p))
+%% ================== Matlab code fragment 6.13 ==================
+n = length(X);
+k = input('Enter the moment to be estimated: ');
+Z = X.^k;
+Mn = mean(Z);
+Sn = std(Z);
+level = input('Enter 1-alpha as a percent: ');
+lvl = level/100; % Convert percent to decimal
+alpha = 1-lvl;
+y = norminv(1-alpha/2);
+delta = Sn*y/sqrt(n);
+fprintf('%gth moment = %g +/- %g with %g%% probability\n',...
+   k,Mn,delta,level)
+fprintf('Corresponding interval is [%g,%g]\n',...
+   Mn-delta,Mn+delta)
+%% ================== Matlab code fragment 6.14 ==================
+n = 1000;
+U = rand(1,n);
+X = sqrt(-2*log(U));  % X is Rayleigh(1)
+X = 3*X;              % Make X Rayleigh(3)
+%% ================== Matlab code fragment 6.15 ==================
+n = 1000;
+U = randn(5,n);       % U is N(0,1)
+U2 = U.^2;            % U2 is chi-squared
+% with one degree of freedom
+X = sum(U2);          % column sums are
+% chi-squared with 5 degrees of freedom
+%% ================== Matlab code fragment 6.16 ==================
+n = 1000;
+U = randn(5,n);       % U is N(0,1)
+U = U + 2/sqrt(5);    % U is N(m,1)
+% with m = 2/sqrt(5)
+U2 = U.^2;            % U2 is noncentral
+% chi-squared with one degree of freedom
+% and noncentrality parameter 4/5
+X = sum(U2);          % column sums are
+% noncentral chi-squared with 5 degrees
+% of freedom and noncentrality parameter 4
+%% ================== Matlab code fragment 6.17 ==================
+n = 1000;
+U = rand(3,n);   % U is uniform(0,1)
+V = -log(U);     % V is exp(1)
+V = 5*V;         % V is exp(1/5)
+X = sum(V);      % column sums are Erlang(3,1/5)
+%% ================== Matlab code fragment 6.18 ==================
+n = 1000;
+U1 = rand(1,n);   % U1 is uniform(0,1)
+V1 = -log(U1)/2;  % V1 is exp(2)
+U2 = rand(1,n);   % U2 is uniform(0,1)
+V2 = -log(U2)/2;  % V2 is exp(2)
+X = V1-V2;        % X is Laplace(2)
+%% ================== Matlab code fragment 6.19 ==================
+n = 1000;
+X = randn(1,n);   % X is N(0,1)
+nbins = 15;
+minX = min(X);
+maxX = max(X);
+e = linspace(minX,maxX,nbins+1);
+H = histc(X,e);
+H(nbins) = H(nbins)+H(nbins+1);
+H = H(1:nbins);                % resize H
+bw = (maxX-minX)/nbins;        % bin width
+a = e(1:nbins);                % left  edge sequence
+b = e(2:nbins+1);              % right edge sequence
+bin_centers = (a+b)/2;         % bin centers
+bar(bin_centers,H/(bw*n),'hist')
+hold on
+t = linspace(min(X),max(X),150);
+y = exp(-t.^2/2)/sqrt(2*pi);
+plot(t,y)
+hold off
+%% ================== Matlab code fragment 6.20 ==================
+n = 100
+X = randn(1,n);  % N(0,1) random numbers
+X = X + 3;       % Change mean to 3
+Mn = mean(X)
+sigma = 1
+delta = 1.96*sigma/sqrt(n)
+fprintf('The 95%% confidence interval is [%g,%g]\n', ...
+   Mn-delta,Mn+delta)
+%% ================== Matlab code fragment 6.21 ==================
+n = 100
+X = randn(1,n);  % N(0,1) random numbers
+m = 5
+sigma = 3
+X = sigma*X + m; % Change to N(m,sigma^2)
+Mn = mean(X)
+Sn = std(X)
+delta = 1.96*Sn/sqrt(n)
+fprintf('The 95%% confidence interval is [%g,%g]\n', ...
+   Mn-delta,Mn+delta)
+%% ================== Matlab code fragment 6.22 ==================
+x = [ 1 2 3 4 5 6 7 8 9 ];
+Y = [ 0.2631 0.2318 0.1330 0.6751 1.3649 1.5559, ...
+      2.3184 3.7019 5.2953];
+p = 2;
+a = polyfit(x,Y,p)
+subplot(2,2,1);      % Put multiple plots in same fig.
+plot(x,Y,'o')        % Plot pnts only; do not connect.
+axis([0 10 -1 7]);   % Force plot to use this scale.
+subplot(2,2,2)
+t=linspace(0,10,50); % For plotting g from 0 to 10
+gt = polyval(a,t);   % at 50 points.
+plot(x,Y,'o',t,gt)
+axis([0 10 -1 7]);   % Use same scale as prev. plot.
+gx = polyval(a,x);   % Compute g(x_k) for each k.
+sse = sum((Y-gx).^2) % Compute sum of squared errors.
+%% ================== Matlab code fragment 6.23 ==================
+T = 2*pi;
+x = linspace(0,T,5);
+Y = sin(x);
+p = 4;
+a = polyfit(x,Y,p);
+t = linspace(0,T,50);
+st = sin(t);
+gt = polyval(a,t);
+subplot(2,1,1)
+plot(t,st,t,gt)
+subplot(2,1,2)
+plot(t,st-gt)        % Plot error curve sin(t)-g(t).
+%% ================== Matlab code fragment 6.24 ==================
+t = [ 1 1.4444 1.8889 2.3333 2.7778 3.2222 3.6667, ...
+      4.1111 4.5556 5 ];
+Z = [ 1.0310 0.6395 0.3404 0.2873 0.2090 0.1147, ...
+      0.2016 0.1192 0.1297 0.0536 ];
+x = log(t);
+Y = log(Z);
+subplot(2,2,1)
+a = polyfit(t,Z,3);    % Fit cubic to data (t_k,Z_k).
+u = linspace(1,5,50);
+v = polyval(a,u);
+plot(t,Z,'o',u,v)      % Plot (t_k,Z_k) & cubic.
+axis([1 5 0 1.1])
+title('Best-fit cubic to data')
+subplot(2,2,2)
+a = polyfit(x,Y,1);    % Fit st. line to (x_k,Y_k).
+u = linspace(0,2,2);
+v = polyval(a,u);
+plot(x,Y,'o',u,v)      % Plot (x_k,Y_k) & st. line.
+title('Best-fit straight line to (ln(t_k),ln(Z_k))')
+subplot(2,2,3)
+qhat = NaN; %_____      ******  FILL IN  BEFORE RUNNING ******
+chat = NaN; %_____      ******  FILL IN  BEFORE RUNNING ******
+u = linspace(1,5,50);
+v = chat./u.^qhat;
+plot(t,Z,'o',u,v)
+axis([1 5 0 1.1]) % Plot (t_k,Z_k) & c/t^q using estimates.
+title('(estimate of c)/t\^(estimate of q)')
+%% ================== Matlab code fragment 6.25 ==================
+t = 5;
+s = t;
+n = 100;
+Z = randn(1,n);	% N(0,1) random numbers
+Zt = Z+s;			% change mean to s
+X = zeros(1,n);
+i = find(Zt>t);
+X(i) = exp(-s*Zt(i))*exp(s^2/2);
+Mn = mean(X);
+Sn = std(X);
+delta = Sn*1.96/sqrt(n);
+fprintf('M(%7i)   = %g +/- %g, Sn = %g\n',...
+   n,Mn,delta,Sn)
+fprintf('The 95%% confidence interval is [%g,%g]\n', ...
+   Mn-delta,Mn+delta)
+

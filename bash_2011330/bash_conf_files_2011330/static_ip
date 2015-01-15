@@ -1,0 +1,126 @@
+Howto: Ubuntu Linux convert DHCP network configuration to static IP configuration
+
+Your main network configuration file is /etc/network/interfaces
+
+Desired new sample settings:
+=> Host IP address 192.168.1.100
+=> Netmask: 255.255.255.0
+=> Network ID: 192.168.1.0
+=> Broadcast IP: 192.168.1.255
+=> Gateway/Router IP: 192.168.1.254
+=> DNS Server: 192.168.1.254
+
+Open network configuration file
+$ sudo vi /etc/network/interfacesOR$ sudo nano /etc/network/interfaces
+
+Find and remove dhcp entry:
+iface eth0 inet dhcp
+
+Append new network settings:
+
+iface eth0 inet static
+address 192.168.1.100
+netmask 255.255.255.0
+network 192.168.1.0
+broadcast 192.168.1.255
+gateway 192.168.1.254
+
+Save and close the file. Restart the network:
+$ sudo /etc/init.d/networking restart
+Task: Define new DNS servers
+
+Open /etc/resolv.conf file
+$ sudo vi /etc/resolv.conf
+
+You need to remove old DNS server assigned by DHCP server:
+search myisp.com
+nameserver 192.168.1.254
+nameserver 202.54.1.20
+nameserver 202.54.1.30
+
+Save and close the file.
+Task: Test DNS server
+
+$ host cyberciti.biz
+Network command line cheat sheet
+
+You can also use commands to change settings. Please note that these settings are temporary and not the permanent. Use above method to make network changes permanent or GUI tool as described below.
+Task: Display network interface information
+
+$ ifconfig
+Task: Take down network interface eth0 / take a network interface down
+
+$ sudo ifconfig eth0 downOR $ sudo ifdown eth0
+Task: Bring a network interface eth0 up
+
+$ sudo ifconfig eth0 upOR$ sudo ifup eth0
+Task: Change IP address and netmask from command line
+
+Activate network interface eth0 with a new IP (192.168.1.50) / netmask:
+$ sudo ifconfig eth0 192.168.1.50 netmask 255.255.255.0 up
+Task: Display the routing table
+
+$ /sbin/route OR$ /sbin/route -n
+Output:
+
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+localnet        *               255.255.255.0   U     0      0        0 ra0
+172.16.114.0    *               255.255.255.0   U     0      0        0 eth0
+172.16.236.0    *               255.255.255.0   U     0      0        0 eth1
+default         192.168.1.254   0.0.0.0         UG    0      0        0 ra0
+
+Task: Add a new gateway
+
+$ sudo route add default gw 172.16.236.0
+Task: Display current active Internet connections (servers and established connection)
+
+$ netstat -nat
+Task: Display open ports
+
+$ sudo netstat -tulpOR$ sudo netstat -tulpn
+Task: Display network interfaces stats (RX/TX etc)
+
+$ netstat -i
+Task: Display output for active/established connections only
+
+$ netstat -e
+$ netstat -te
+$ netstat -tue
+
+Where,
+
+    * -t : TCP connections
+    * -u : UDP connections
+    * -e : Established
+
+Task: Test network connectivity
+
+Send ICMP ECHO_REQUEST to network hosts, routers, servers etc with ping command. This verifies connectivity exists between local host and remote network system:
+$ ping router
+$ ping 192.168.1.254
+$ ping cyberciti.biz
+
+See simple Linux system monitoring with ping command and scripts for more information.
+Task: Use GUI (Graphical Configuration) network Tool
+
+If you are new, use GUI configuration tool, type the following command at terminal:
+$ network-admin &
+
+Above command is Ubuntu's GUI for configuring network connections tool.
+Final tip - Learn how find out more information about commands
+
+A man page is your best friend when you wanted to learn more about particular command or syntax. For example, read detailed information about ifconfig and netstat command:
+$ man ifconfig
+$ man netstat
+
+Just get a short help with all command options by appending --help option to each command:
+$ netstat --help
+
+Find out what command is used for particular task by searching the short descriptions and manual page names for the keyword:
+$ man -k 'delete directory'
+$ apropos -s 1 remove
+
+Display short descriptions of a command:
+$ whatis rm
+$ whatis netstat

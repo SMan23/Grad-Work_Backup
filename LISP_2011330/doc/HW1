@@ -1,0 +1,78 @@
+Suleyman Muhammad
+Computer Engineer
+Villanova University
+
+Homework #1 Explainations
+
+Problem #1) 
+   part a.
+
+CG-USER(3): (+ (- 5 1) (+ 3 7))
+14
+
+Explaination: 
+	The list terms (- 5 1) and (+ 3 7) are evaluated then summed to give the Final value 14
+
+   part b.
+
+CG-USER(4): (list 1 (+ 2 3))
+(1 5)
+
+Explaination: 
+	The command lists the two atoms "1 5" wiere 5 is evaluated from the list item 2+3
+
+   c)
+
+CG-USER(5): (if (listp 1) (+ 1 2) (+ 3 4))
+7
+
+Explaination:
+	The condition returns NIL so the code will evaluate the second term which returns the integer 7
+
+   d)
+
+CG-USER(14): (list (and (listp 3) t) (+ 1 2))
+(NIL 3)
+
+Explaination:
+	The code will list two atoms, the first is the return value of the condition (and (listp 3) t) which will return NIL because the atom 3 is not a list. The second atom is the evaluation of (+ 1 2) which returns 3.
+
+
+Problem #2)
+
+	Give 3 different Cons expressions which give (A B C)
+1.
+
+CG-USER(22): (cons 'a '(b c))
+(A B C)
+
+2.
+
+CG-USER(2): (cons 'a (cons 'b '(c)))
+(A B C)
+
+3.
+
+CG-USER(4): (cons 'a (cons 'b (cons 'c nil)))
+(A B C)
+
+Problem #3)
+
+	Using car and cdr, define a function to return the forth element of a list
+
+Code:
+(defun my-fourth (lst)
+  (if (null lst)
+    nil 
+    (do ((i 0 (+ i 1)))
+    
+    (car (cdr (cdr (cdr lst))))
+
+Explaination:
+	This code is essentially a function named my-fourth that takes the input
+Problem #4)
+Problem #5)
+Problem #6)
+Problem #7)
+Problem #8)
+Problem #9)

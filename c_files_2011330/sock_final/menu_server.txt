@@ -1,0 +1,5 @@
+SERVER_CONNECT_MENU
+1.Listen_for_IM_Connection
+2.Listen_for_File_Transfer
+3.Print_Menu
+4.Exit

@@ -1,0 +1,5 @@
+function y = R(n)
+y = ones(size(n));
+i = find(n~=0);
+x = pi*n(i)/2;
+y(i) = sin(x)./x;

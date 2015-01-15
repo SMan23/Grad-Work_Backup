@@ -1,0 +1,39 @@
+%% ================== Matlab code fragment 11.1 ==================
+% Plot Poisson Process on [0,Tmax]
+%
+Tmax = 10;
+lambda = 1;
+n = 0;         % Number of points
+Tlast = 0;     % Time of last arrival
+while Tlast <= Tmax
+   n = n + 1;
+   X = -log(rand(1))/lambda; % Generate exp(lambda) RV
+   Tlast = Tlast + X;
+   T(n) = Tlast;
+end
+n = n-1;       % Remove last arrival,
+T = T(1:n);    % which is after Tmax.
+fprintf('There were %g arrivals in [0,%g].\n',n,Tmax)
+tt = kron(T,[1 1]); % Convert [x y z] to [x x y y z z]
+tt = [ 0 tt Tmax ];
+N = [ 0:n ];        % Values of the Poisson process
+NN = kron(N,[1 1]);
+plot(tt,NN)
+axis([0 Tmax 0 n+1])
+%% ================== Matlab code fragment 11.2 ==================
+n = 10000;
+nbins = 20;
+U = rand(1,n);
+X = G(U);
+minX = min(X);
+maxX = max(X);
+e = linspace(minX,maxX,nbins+1); % edge sequence
+H = histc(X,e);
+H(nbins) = H(nbins)+H(nbins+1);  % explained in Section 6.2
+H = H(1:nbins);                  % resize H
+bw = (maxX-minX)/nbins;          % bin width
+a = e(1:nbins);                  % left  edge sequence
+b = e(2:nbins+1);                % right edge sequence
+bin_centers = (a+b)/2;           % bin centers
+bar(bin_centers,H/(bw*n),'hist')
+

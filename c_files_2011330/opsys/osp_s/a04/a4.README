@@ -1,0 +1,33 @@
+ECE 8473 Assignment #4 - Due: 9 Oct. 2010
+Do not use any temporary files in this assignment.
+
+   1. [20] a4/p1.sh (SSL) - joining lines
+
+      Write a Korn shell script which joins pairs of lines from standard input and   	
+      writes them to standard output.
+
+      Assume that the input contains an even number of lines.
+
+   2. [20] a4/p2.sh (SSL) - rotating lines
+
+      Write a Korn shell script which reads lines from standard input and writes to 
+      standard output, and writes the first input line last.
+
+   3. [30] a4/p3.sh (SSL) - ksh nums
+
+      Write a Korn shell script with the following usage:
+
+        nums start stop [inc]
+
+      which prints integer numbers, one per line, from start to stop, using optional 
+      increment inc, or ±1 if the increment is not specified.
+
+      See class notes and USP Chapter 7 regarding shell command-line arguments.
+
+   4. [30] a4/p4.c (SSL) - C nums
+
+      Write the nums program in C.
+
+      See class notes and ABC Section 6.14 regarding arguments to main(). 
+
+

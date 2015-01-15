@@ -1,0 +1,8 @@
+% M-file with function to generate an
+% m-by-n matrix of Bernoulli(p) random numbers.
+%
+function Y = bernrnd(p,m,n)
+X = rand(m,n);
+Y = zeros(m,n);
+i = find(X>1-p);
+Y(i) = ones(size(i));

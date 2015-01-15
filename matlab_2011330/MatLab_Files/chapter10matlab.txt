@@ -1,0 +1,30 @@
+%% ================== Matlab code fragment 10.1 ==================
+N = 128;
+rootN = sqrt(N);
+nvec = [0:N-1];
+Rvec = Rcontinuoustime(nvec/rootN); % The function R(.) is defined
+                      % in a separate M-file below.
+Svec = fftshift((2*real(fft(Rvec))))/rootN;
+f = (nvec-N/2)/rootN;
+plot(f,Svec)
+%% ================== Matlab code fragment 10.2 ==================
+% function y = R(tau)  % ****** See file Rcontinuoustime.m *******
+% y = ones(size(tau));
+% i = find(tau~=0);
+% x = pi*tau(i)/2;
+% y(i) = sin(x)./x;
+%% ================== Matlab code fragment 10.3 ==================
+N = 128;
+nvec = [0:N-1];
+Rvec = Rdiscretetime(nvec);       % The function R(n) is defined
+Rvec(1) = Rvec(1)/2;  % in a separate M-file below.
+Svec = fftshift((2*real(fft(Rvec))));
+f = (nvec-N/2)/N;
+plot(f,Svec)
+%% ================== Matlab code fragment 10.4 ==================
+% function y = R(n)    % ****** See file Rdiscretetime.m *******
+% y = ones(size(n));
+% i = find(n~=0);
+% x = pi*n(i)/2;
+% y(i) = sin(x)./x;
+

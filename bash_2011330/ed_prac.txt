@@ -1,0 +1,17 @@
+Welcome to Ubuntu 10.04 LTS!
+
+The Ubuntu project is built on the ideas enshrined in the Ubuntu philosophy: that software should be available free of charge, that software tools should be usable by people in their local language, and that people should have the freedom to customize and alter their software in whatever way they need.
+Getting Help with Ubuntu:
+
+There are many ways to get help with Ubuntu.
+
+Access Ubuntu's guides and documentation by selecting "Help" from your System menu. You can also find help from the official Ubuntu documentation website and the community contributed documentation.
+
+If you prefer some human contact, you can use the mailing lists, web forums, or chat with the community on Freenode IRC Channel: #ubuntu.
+
+You can also obtain commercial support.
+Participate in Ubuntu:
+
+The Ubuntu community is made up of software developers, documentation writers, translators, graphic artists, and most importantly, the people who are using Ubuntu in their everyday lives. We invite you to join this community and help shape Ubuntu into an operating system that better meets your needs.
+
+To find out how to participate, visit Ubuntu's community participation page!

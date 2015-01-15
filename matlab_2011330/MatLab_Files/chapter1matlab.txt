@@ -1,0 +1,40 @@
+%% ================== Matlab code fragment 1.1 ==================
+% Simulation of Tossing a Fair Die
+%
+n = 100;                  % Number of tosses.
+X = ceil(6*rand(1,n));
+minX = min(X);            % Save to avoid re-
+maxX = max(X);            % computing min & max.
+e = [minX:maxX+1]-0.5;
+H = histc(X,e);
+nbins = length(e) - 1;
+bin_centers = [minX:maxX];
+bar(bin_centers,H(1:nbins),'hist')
+%% ================== Matlab code fragment 1.2 ==================
+X = ceil(6*rand(1,n));
+%% ================== Matlab code fragment 1.3 ==================
+Y = ceil(6*rand(1,n));
+Z = ceil(6*rand(1,n));
+X = Y + Z;
+%% ================== Matlab code fragment 1.4 ==================
+% Simulation of Drawing an Ace
+%
+n = 10000;                % Number of draws.
+X = ceil(52*rand(1,n));
+aces = (1 <= X & X <= 4);
+naces = sum(aces);
+fprintf('There were %g aces in %g draws.\n',naces,n)
+%% ================== Matlab code fragment 1.5 ==================
+% Chips from suppliers S1 and S2.
+%
+NOS1 = 983;       % Number of chips from S1
+NOS2 = 871;       % Number of chips from S2
+NOWS1 = sum(rand(1,NOS1) >= 0.2); NODS1 = NOS1-NOWS1;
+NOWS2 = sum(rand(1,NOS2) >= 0.3); NODS2 = NOS2-NOWS2;
+Nmat = [ NOWS1 NOWS2; NODS1 NODS2 ]
+NOS = [ NOS1 NOS2 ]
+fprintf('Rel freq working chips from S1 is %4.2f.\n',...
+   NOWS1/NOS1)
+fprintf('Rel freq working chips from S2 is %4.2f.\n',...
+   NOWS2/NOS2)
+

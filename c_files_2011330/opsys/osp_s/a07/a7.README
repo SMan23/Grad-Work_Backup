@@ -1,0 +1,63 @@
+ECE 8473 Assignment #7 - Due: 13 Nov. 2010
+
+For each of the string functions specified below:
+
+    Do not use any temporary arrays (no extra static, auto, or dynamic arrays).
+
+    Do not invoke any other functions (implementation must be self-contained). 
+
+Declarations for the examples:
+
+char s[BUFSIZ], s1[BUFSIZ], s2[BUFSIZ], *p;
+
+a7/p1.c (SSL) - Implement the following string functions and main test program:
+
+   1. char *strdog( const char s1[], char s2[])
+
+      Prepends s1 to s2 and returns s2.
+
+      A relative of strcat, strdog inserts s1 at the beginning of s2. It does this by moving the characters of s2 over to make room for s1, then copying the characters from s1 into the beginning of s2.
+
+      Example:
+
+        strcpy( s2, "efg"); p = strdog( "abc", s2);
+
+        s2 now contains "abcefg" and p == s2.
+
+   2. char *strrm( char s1[], const char s2[])
+
+      Removes the set of s2 characters from s1 and returns s1.
+
+      Example:
+
+        strcpy( s1, "AABZBAADZDAA"); p = strrm( s1, "ZA");
+
+        s1 now contains "BBDD" and p == s1.
+
+   3. char *strcrm( char s1[], const char s2[])
+
+      Removes the complement of the set of s2 characters from s1 and returns s1.
+
+      The "complement of s2" consists of all characters which are not contained in s2.
+
+      Example:
+
+        strcpy( s1, "AABZBAADZDAA"); p = strcrm( s1, "ZA");
+
+        s1 now contains "AAZZAA" and p == s1.
+
+   4. char *strrev( char s[])
+
+      Reverses the order of the characters in s and returns s.
+
+      Example:
+
+        strcpy( s, "abcde"); p = strrev( s);
+
+        s now contains "edcba" and p == s.
+
+   5. main
+
+      Write a main program which performs one non-trivial test for each of the string functions above, checks the result and return value, and indicates whether the function passed or failed the test. 
+
+

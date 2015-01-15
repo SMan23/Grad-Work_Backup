@@ -1,0 +1,44 @@
+ECE 8473 Assignment #5 - Due: 30 Oct. 2010
+
+   1. a5/p1.c (SSL) - ABC P5.18 - gcd using a recursive function
+
+      The function is given in the problem.
+   2. a5/p2.c (SSL) - ABC P5.18 Continued - gcd using an iterative function
+
+      Use Euclid's method, i.e. to find gcd(x,y):
+
+          Replace x with x mod y, since gcd(x,y) = gcd(x-ky,y).
+
+          Then replace y with y mod x, since gcd(x,y) = gcd(x,y-kx).
+
+          Repeat until x or y becomes zero, then the other one will be the gcd. 
+
+   3. a5/p3.c (SSL) - ABC P5.26 - birth month collision simulation
+
+      Use 12 counter variables as the problem states, or use an array.
+
+      Use a function to generate a random birth month.
+
+      Also use a function to perform the trials for a given value of n (number of people) which returns non-zero if the trial is "true" (some birth values came out equal), or 0 if there were no collisions.
+
+      The estimated probability is the number of true trials divided by the total number of trials for each value of n.
+
+   4. a5/p4.c (SSL) - ABC P6.36 - birth day collision simulation
+
+      Use a counter array of size 365.
+
+      Use functions to generate random birth days and perform trials as in the previous problem. 
+
+Notes on the birth collision simulations
+
+The programming methods used to perform the birth collision simulations are the same as those used in simulating more technical probability problems, such as the probability of error in digital transmission over a noisy channel. The birthday problem itself is probably isomorphic to some problem in signal processing. It is exactly the same problem as finding collisions for a message digest (secure hash function). So the techniques used to simulate the birthday problem are applicable to many other types of more "practical" problems.
+
+P6.36 indicates that a single trial experiment consists of filling an array with integers that are randomly distributed over the range of birth days, and if any two elements in the array have the same value then the trial is "true". While conceptually correct, an implementation of that technique would be very inefficient. How would you determine if any two elements in an array have the same value? Possibly by sorting the array and then checking for duplicates? We don't do no stinkin sorting here! So there must be a better way.
+
+P5.26 indicates that a set of counters would be used for each trial, representing the number of people born in each month (or on each day for P5.36). As soon as any counter gets to 2, the trial can be declared "true" without having to generate the rest of the random birthday values. This is very efficient and seems to be the best way to implement this simulation.
+
+One might wonder: since there is an exact formula for the probability in question, why bother writing a simulation? One answer is that a simulation program must be verified before we can trust its results. By running a simulation to produce results that we can compare against known exact values, we gain assurance that the program is correct. Then we can modify the program to perform other calculations for which there may not be any exact mathematical formula or for which the exact formula is too difficult to derive.
+
+For example, in the birthday problem, what is the mean and variance of the number of birthdays one must generate before getting two that match? Exact formulas for that seem difficult and perhaps impossible to derive. But it takes only a few minutes to modify a working birthday simulation program and produce this result: avg = 24.6344, stdev = 12.2301
+
+Another reason why simulations are performed is to check the accuracy of a derived exact formula, to give one assurance that the supposed exact formula is correct. The IEEE Journals on Computers and Signal Processing are full of papers where the authors derive formulas so complex that only 2 or 3 other people in the world can check them. So they usually include simulations to validate the theoretical results, and produce various tables and plots that mere mortals can understand. 

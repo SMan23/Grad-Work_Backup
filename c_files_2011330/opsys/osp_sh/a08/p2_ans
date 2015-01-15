@@ -1,0 +1,20 @@
+ christopher.capurso:  So, any idea how to switch the way the sort command works? Sort from right to left of each line rather than from left to right?
+ Sent at 11:52 PM on Sunday
+ me:  ehy chris
+im not sure about that sort
+but when ever i try to do a loop
+using say n="$#"
+as the number to decrement
+it keeps treating it like a file
+ christopher.capurso:  I think you need two loops
+ me:  and saying "2: no file or directory found"
+ christopher.capurso:  So pipe the output of find into a loop
+Then use echo `basename ... `  `dirname ... `
+Then pipe that into a sort
+ me:  ahhh
+echo
+yessir
+ christopher.capurso:  That way, you will have a sorted list with the filename first then the directory name
+Then pipe that into another loop in order to find duplicates
+I think that will work
+ me:  ic you spent some serious time on this

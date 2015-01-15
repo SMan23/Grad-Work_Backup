@@ -1,0 +1,95 @@
+ECE 8473 Assignment #8 - Due: 20 Nov. 2010
+
+   1. a8/p1.c (SSL) - Reverse Polish Stack Calculator
+
+Use an array-based stack of double, and strtok parsing of lines from stdin into whitespace-separated words, to implement a reverse-polish calculator which accepts the following operators and commands:
+
+        +   -   *   /   sqrt   dup   clear   exit   quit
+
+For each line of input: display the line, parse and execute the line, then display the stack.
+
+      Sample run:
+
+      % cat calc.in
+      1.1 2.2 3.3 dup
+       *
+      sqrt
+        +
+      -
+      3 *
+      3 /
+      clear 1 2 3 + +
+      quit
+
+      % ./calc < calc.in
+      1.1 2.2 3.3 dup
+              1.1     
+              2.2     
+              3.3     
+              3.3     
+       *
+              1.1     
+              2.2     
+              10.89   
+      sqrt
+              1.1     
+              2.2     
+              3.3     
+        +
+              1.1     
+              5.5     
+      -
+              -4.4    
+      3 *
+              -13.2   
+      3 /
+              -4.4    
+      clear 1 2 3 + +
+              6       
+      quit
+      % 
+
+   2. a8/p2.sh (SSL) - Finding Duplicate File Names
+
+Write a Korn shell script which finds and displays duplicate file names in a list of directory arguments (or in "." if no directory arguments are supplied).
+
+See class notes and man pages for find, basename, dirname, and sort.
+
+      Sample runs:
+
+      % ls -F
+      dup*  t1/   t2/   t3/
+      % ls -R
+      .:
+      dup  t1   t2   t3
+
+      ./t1:
+      x  y  z
+
+      ./t2:
+      x  y
+
+      ./t3:
+      a  y  z
+      % ./dup t1
+      % ./dup t1 t2
+       
+      t1/x
+      t2/x
+       
+      t1/y
+      t2/y
+      % ./dup
+       
+      ./t1/x
+      ./t2/x
+       
+      ./t1/y
+      ./t2/y
+      ./t3/y
+       
+      ./t1/z
+      ./t3/z
+      % 
+
+

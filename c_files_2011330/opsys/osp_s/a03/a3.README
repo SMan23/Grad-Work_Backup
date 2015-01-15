@@ -1,0 +1,30 @@
+ECE 8473 Assignment #3 - Due: 2 Oct. 2010
+
+
+1. a3/p1.c - ABC P3.19: eπ vs. πe
+
+      The program must display both values and indicate which is larger.
+
+      Use functions from math.h to compute e and π to full precision at run-time.
+   
+2. a3/p2.c - ABC P3.20: sqrt(-1)
+
+Include <errno.h> and after calling sqrt() display the value of errno and call perror().
+
+3. a3/p3.c - one math.h function
+
+      Choose one of the available math.h functions and implement your own version of the function using an iterative method (i.e. a power series) efficiently evaluated until it converges, without invoking any other functions.
+
+      Compare your results with those from the C library math.h version of the function for two non-trivial arguments (i.e. not just 0 or 1 in, and 0 or 1 out) and display the arguments, result values, result difference, and result relative error.
+
+      Reference: some series expansions from Reference Data for Radio Engineers, sixth edition, 1979, page 46-26.
+   
+4. a3/p4.c and a3/p4.sh - countdown to Fall break
+
+      First write a C program using scanf() with EOF and error detection (with error messages written to stderr) to read a non-negative time() value from standard input, then compute the difference between that value and the current time, and display the difference in terms of days, hours, minutes, and seconds.
+
+      Then write a Korn shell script to invoke your program 10 times, once per second, to display the time remaining until the start of Fall break. Assume that Fall break starts at noon on Friday, Oct. 8, i.e. time() value = 1286553600
+
+      Extra/optional: in the VECR HTML project directory, write a p4.sh script similar to the script described above, but which also uses some sort of http refresh, or javascript, or something (?) to make the display fancier. Note that in the HTML project directory, output is sent with Content-type header "text/html" instead of "text/plain", so your browser will expect scripts and programs there to produce html output. 
+
+
